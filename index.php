@@ -44,6 +44,7 @@
 		<a href="index.php">Home</a>
 		<a href="login.php">Login</a>
 		<a href="buku.php">Buku</a>
+		<a href="anggota.php">Anggota</a>
 	</div>
 	
 	<?php
