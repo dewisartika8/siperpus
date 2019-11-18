@@ -6,12 +6,12 @@
 		redirect('login.php');
 	}else{
 		$database = new mysqli('127.0.0.1', 'root', '', 'perpustakaan');
-		$query = 'SELECT * FROM anggota';
+		$query = 'SELECT * FROM buku';
 
-		$id_anggota = $_GET['id_anggota'];
-		$delete = "DELETE FROM anggota WHERE id_anggota='$id_anggota'";
+		$kd_buku = $_GET['kd_buku'];
+		$delete = "DELETE FROM buku WHERE kd_buku='$kd_buku'";
 		$statement = $database->prepare($delete);
 		$statement->execute();
 	}
 
-	redirect('anggota.php');
+	redirect('buku.php');

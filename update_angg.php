@@ -5,10 +5,10 @@
 	if (!isset($_SESSION['is_logged_in'])) {
 		redirect('login.php');
 	}
-	open_page('update anggota');
-	$id =$_GET['id_anggota'];
+	open_page('add anggota');
+	$id_anggota =$_GET['id_anggota'];
 	$database = mysqli_connect('127.0.0.1', 'root', '', 'perpustakaan');
-	$data = "SELECT * FROM anggota WHERE id='$id_anggota'";
+	$data = "SELECT * FROM anggota WHERE id_anggota='$id_anggota'";
 	$result_set = $database->query($data);
 	while($data = $result_set->fetch_assoc()){
 ?>

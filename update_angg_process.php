@@ -12,7 +12,7 @@
 	$status_anggota			= $_POST['status_anggota'];
 
 	$database = new mysqli('127.0.0.1','root','','perpustakaan');
-	$query = "UPDATE anggota SET id_anggota='$id_anggota', nm_anggota='$nm_anggota', alamat = '$alamat', ttl_anggota = '$ttl_anggota', status_anggota = '$status_anggota' WHERE id='$id_anggota'";
+	$query = "UPDATE anggota SET id_anggota='$id_anggota', nm_anggota='$nm_anggota', alamat = '$alamat', ttl_anggota = '$ttl_anggota', status_anggota = '$status_anggota' WHERE id_anggota='$id_anggota'";
 	$statement = $database->prepare($query);
 	$statement->execute();
 	redirect('anggota.php');
