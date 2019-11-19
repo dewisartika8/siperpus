@@ -5,7 +5,7 @@
 		redirect('login.php');
 	}
 ?>
-<center style="background-color: #0099CC; color: white; font-style: unset; padding: 20px; margin-bottom: -17px; "><h1>Sistem Informasi Perpustakaan</h1></center><br>
+<center style="background-color: #0099CC; color: grey; font-style: unset; padding: 20px; margin-bottom: -17px; "><h1>Sistem Informasi Perpustakaan</h1></center><br>
 
 <div name='page_one' style=" line-height: 0em;background-color: yellow; padding: 20px; margin-top: 0px; margin-bottom: 20px;">
 	<a href="index.php">Home</a>
