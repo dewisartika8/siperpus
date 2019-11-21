@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	include_once('functions.php');
+	include_once('function.php');
 	
 	if(!isset($_SESSION['is_logged_in'])){
 		redirect('login.php');
@@ -15,3 +15,4 @@
 	}
 
 	redirect('buku.php');
+	?>
