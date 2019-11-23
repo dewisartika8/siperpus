@@ -51,6 +51,7 @@
 		
 	</table>
 </form>
+
 <?php
 }
 close_page();
