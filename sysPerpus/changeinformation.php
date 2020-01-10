@@ -177,7 +177,7 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-sm-6">
-              <p>Kelompok 4 PABI D3TK18</a> &copy; <span id="year-cred"></span></p>
+              <p><a href="https://www.instagram.com/_dewisiburian">Kelompok 4 PABI D3TK18</a> &copy; <span id="year-cred"></span></p>
             </div>
           </div>
         </div>
