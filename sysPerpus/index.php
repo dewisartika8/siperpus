@@ -2,27 +2,6 @@
   include 'ceklogin.php';
   include 'function.php';
 
-  // Kirim Pesan
-  if ( isset($_POST['kirim']) ) {
-    if ( kirimpesan($_POST) > 0 ) {
-      echo "
-        <script>
-          alert('Berhasil mengirim pesan!');
-          window.location = 'index.php';
-        </script>
-      ";
-    } else {
-      echo "
-        <script>
-          alert('Gagal Mengirim Pesan!');
-          window.location = 'index.php';
-        </script>
-      ";
-    }
-  }
-
-
-
   // Menampilkan Informasi Buku di Perpustakaan
   $judulbuku = mysqli_query($conn, "SELECT * FROM tblbuku");
   $resultjudulbuku = mysqli_num_rows($judulbuku);
